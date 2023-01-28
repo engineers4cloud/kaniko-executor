@@ -1,5 +1,5 @@
 FROM gcr.io/kaniko-project/executor:debug AS kaniko
-FROM Amazonlinux:latest
+FROM amazonlinux:latest
 
 COPY --from=kaniko /kaniko/ /kaniko/
 
