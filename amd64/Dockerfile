@@ -9,7 +9,6 @@ ENV DOCKER_CREDENTIAL_GCR_CONFIG /kaniko/.config/gcloud/docker_credential_gcr_co
 ENV SSL_CERT_DIR /kaniko/ssl/certs
 
 RUN yum update -y \
-&& yum install -y unzip jq \
 && yum clean all \
 && rm -rf /var/cache/yum
 
